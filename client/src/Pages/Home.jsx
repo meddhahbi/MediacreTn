@@ -12,6 +12,8 @@ import About from '../Components/About/About'
 import ServicesList from '../Components/Services/ServicesList'
 import videoIcon from '../assets/images/video-icon.png'
 import avatar from '../assets/images/avatar-icon.png'
+import DoctorList from '../Components/Doctors/DoctorList'
+import faqImg from '../assets/images/faq-img.png'
 
 
 const Home = () => {
@@ -229,7 +231,30 @@ const Home = () => {
           </div>
       </section>
 
+      <section>
+        <div className="container">
+        <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">Our great doctors</h2>
+            <p className="text_para text-center">World-class car for everyone. Our health System offers unmatched, expert health care.</p>
+          </div>
 
+          <DoctorList />
+
+        </div>
+      </section>
+
+
+
+
+      <section>
+        <div className="container">
+          <div className="flex justify-between gap-[50px] lg:gap-0">
+            <div className="w-1/2 hidden md:block">
+              <img src={faqImg} alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
 
 
     </>
