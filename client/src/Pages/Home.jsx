@@ -14,6 +14,7 @@ import videoIcon from '../assets/images/video-icon.png'
 import avatar from '../assets/images/avatar-icon.png'
 import DoctorList from '../Components/Doctors/DoctorList'
 import faqImg from '../assets/images/faq-img.png'
+import FaqList from '../Components/Faq/FaqList'
 
 
 const Home = () => {
@@ -252,9 +253,21 @@ const Home = () => {
             <div className="w-1/2 hidden md:block">
               <img src={faqImg} alt="" />
             </div>
+
+            <div className="w-full md:w-1/2">
+              <h2 className="heading">Most questions by our beloved patients</h2>
+              <FaqList />
+            
+            </div>
+
+
           </div>
         </div>
       </section>
+
+
+
+      
 
 
     </>
